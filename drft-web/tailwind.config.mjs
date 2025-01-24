@@ -10,7 +10,16 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blueDark: "#000080",
+        blueLight: "#2B63BC",
+        orangeLight: "#FF8E00",
+        orangeDark: "#FF5003",
+        brandBlack: "#0A0A0A",
+        brandWhite: "#E9F6FF",
       },
+      fontFamily: {
+        title: ["Montserrat", "sans-serif"],
+      }
     },
   },
   plugins: [],
