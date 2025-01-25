@@ -9,6 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/drft-web/app/favicon.ico" />
+      </head>
       <body
         className={`Montserrat antialiased`}
       >
