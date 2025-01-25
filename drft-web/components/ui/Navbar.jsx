@@ -12,7 +12,7 @@ const Navbar = () => {
 
 return (
     <nav>
-        <div className='max-w-full mx-auto px-8 sm:px-6 lg:px-16 lg:py-2 py-4'>
+        <div className='max-w-full mx-auto px-6 sm:px-6 lg:px-16 lg:py-2 py-4'>
             <div className="py-5 lg:flex justify-between items-center hidden">
                 <a href="/"><div className="flex flex-row items-center">
                     <img src={'/Logo.png'} alt="logo" width={120} height={25}/>
