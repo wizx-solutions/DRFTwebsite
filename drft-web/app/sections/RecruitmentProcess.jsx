@@ -57,7 +57,7 @@ export function RecruitmentProcess() {
         },
     ];
     return (
-        (<div className="w-full">
+        (<div className="w-full px-40">
             <Timeline data={data}/>
         </div>)
     );

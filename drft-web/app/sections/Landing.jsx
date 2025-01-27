@@ -8,7 +8,7 @@ const Landing = () => {
 return (
     <div className="flex items-center justify-center h-screen absolute top-0 z-0">
         <div className="relative w-screen h-screen">
-            <img src="/Hero.webp" alt="" className='absolute lg:top-12 -top-10 left-0 w-full h-full object-cover -z-50 pointer-events-none'/>
+            <img src="/Hero.webp" alt="" className='absolute lg:top-12 -top-10  left-0 w-full h-full object-cover object-[55%] lg:object-center -z-50 pointer-events-none'/>
             <div className="absolute lg:-top-[200px] -top-[150px] lg:left-60 left-0 w-[1200px] h-[1200px] bg-blueDark rounded-full lg:blur-[1000px] blur-[400px] transform -translate-x-1/2 -translate-y-1/2 -z-10"></div>
             <div className="absolute -bottom-[400px] -right-[600px] w-[800px] h-[500px] lg:w-[500px] lg:h-[800px] bg-blueLight rounded-full lg:blur-[400px] blur-[250px] -z-10"></div>
             <div className="absolute w-full h-20 top-0 left-0 right-0 mx-auto bg-brandBlack blur-2xl -z-20"></div>
