@@ -9,8 +9,7 @@ export default function Home() {
         <div>
             <Navbar/>
             <div style={{height: '100vh'}}><Landing/></div>
-            <div><RecruitmentProcess/></div>
-            <div style={{height: '100vh'}}></div>
+            <div ><RecruitmentProcess/></div>
 
         </div>
     );
