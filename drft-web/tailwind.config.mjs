@@ -17,6 +17,9 @@ export default {
   			orangeDark: '#FF5003',
   			brandBlack: '#0A0A0A',
   			brandWhite: '#E9F6FF',
+			customOrange: '#FF8E00',
+			customBlue: '#2b63bc',
+			customBG: '#0a0a0a',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
