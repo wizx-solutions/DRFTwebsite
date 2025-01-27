@@ -15,7 +15,7 @@ return (
             <div className="absolute w-full h-52 -bottom-28 left-0 right-0 mx-auto bg-brandBlack blur-2xl -z-20"></div>
 
             <div className='absolute lg:top-1/2 top-1/3 transform -translate-y-1/2  lg:px-16 px-8 items-center justify-center flex flex-col lg:justify-start lg:items-start'>
-                <h1 className='text-white lg:text-6xl text-4xl text-center lg:text-left uppercase leading-tight'>Fueling <span className='font-bold text-orangeLight'>Talent</span> <br /> with <span className='font-bold text-orangeLight'>limitless reach</span></h1>
+                <h1 className='text-white lg:text-6xl text-4xl text-center lg:text-left  uppercase leading-tight'>Fueling <span className='font-bold text-orangeLight'>Talent</span> <br /> with <span className='font-bold text-orangeLight'>limitless reach</span></h1>
                 
                 <div className="relative lg:w-5/12 w-3/4 py-3 bg-orangeLight rounded-full text-white font-bold text-xl justify-center items-center align-middle mt-5 hover:bg-blueLight cursor-pointer transition-all">
                   <div className="absolute inset-0 rounded-full border-2 border-transparent before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blueLight before:to-orangeLight before:z-[-1] before:m-[-2px]"></div>
