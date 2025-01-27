@@ -45,7 +45,7 @@ const Navbar = () => {
                     <div className='z-50'><img src={isOpen ? '/xIcon.png' : '/MenuIcon.png'} alt="" onClick={toggleMenu}/></div>
                 </div>
 
-                <div className='bg-blueDark w-full h-full fixed top-0 left-0 z-40 transform transition-transform duration-300 ease-in-out flex items-center justify-center' style={{transform: isOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
+                <div className='bg-blueDark w-full h-lvh fixed top-0 left-0 z-40 transform transition-transform duration-300 ease-in-out flex items-center justify-center' style={{transform: isOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
                     <div className="flex flex-col gap-10 items-center py-10  px-20 text-center">
                         <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight' >Home</Link>
                         <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>About Us</Link>
