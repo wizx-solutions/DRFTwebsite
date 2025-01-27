@@ -41,6 +41,8 @@ const Navbar = () => {
 
                     <div className='z-50'><img src={isOpen ? '/xIcon.png' : '/MenuIcon.png'} alt=""
                                                onClick={toggleMenu}/></div>
+
+
                 </div>
 
                 <div
