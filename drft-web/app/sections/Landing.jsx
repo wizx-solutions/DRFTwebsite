@@ -6,7 +6,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Landing = () => {
 return (
-    <div className="flex items-center justify-center h-screen absolute top-0 overflow-hidden -z-50">
+    <div className="flex items-center justify-center h-screen absolute top-0 z-0">
         <div className="relative w-screen h-screen">
             <img src="/Hero.webp" alt="" className='absolute lg:top-12 -top-10 left-0 w-full h-full object-cover -z-50 pointer-events-none'/>
             <div className="absolute lg:-top-[200px] -top-[150px] lg:left-60 left-0 w-[1200px] h-[1200px] bg-blueDark rounded-full lg:blur-[1000px] blur-[400px] transform -translate-x-1/2 -translate-y-1/2 -z-10"></div>
@@ -18,8 +18,8 @@ return (
                 <h1 className='text-white lg:text-6xl text-4xl text-center lg:text-left uppercase leading-tight'>Fueling <span className='font-bold text-orangeLight'>Talent</span> <br /> with <span className='font-bold text-orangeLight'>limitless reach</span></h1>
                 
                 <div className="relative lg:w-5/12 w-3/4 py-3 bg-orangeLight rounded-full text-white font-bold text-xl justify-center items-center align-middle mt-5 hover:bg-blueLight cursor-pointer transition-all">
-                  <div className="absolute inset-0 rounded-full border-2 border-transparent before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blueLight before:to-orangeLight before:z-[-1] before:m-[-3px]"></div>
-                  <div className="relative z-10 flex flex-row items-center justify-center">
+                  <div className="absolute inset-0 rounded-full border-2 border-transparent before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-r before:from-blueLight before:to-orangeLight before:z-[-1] before:m-[-2px]"></div>
+                  <div className="relative z-20 flex flex-row items-center justify-center">
                     HIRE A TALENT <span className='ml-3'><FaArrowRightLong size={20}/></span>
                   </div>
                 </div>
