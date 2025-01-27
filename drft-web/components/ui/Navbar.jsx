@@ -10,6 +10,13 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     }
 
+    const scrollToAbout = () => {
+        window.scrollTo({
+            top: window.innerHeight * 1,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <nav className='z-50 fixed top-0 left-0 w-full backdrop-blur-sm'>
             <div className='max-w-full mx-auto px-6 sm:px-6 lg:px-16 lg:py-1 py-4 z-50'>
@@ -21,15 +28,11 @@ const Navbar = () => {
                     </a>
 
                     <div className="flex gap-10 items-center justify-center">
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Home</Link>
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>About Us</Link>
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>What We
-                            Do</Link>
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Recruitement
-                            Procedure</Link>
-                        <Link href="/login"><Button
-                            className='rounded-full w-40 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact
-                            Us</Button></Link>
+                        <a href='#home' className='text-brandWhite text-md hover:text-orangeLight' >Home</a>
+                        <a  className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={scrollToAbout}>About Us</a>
+                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>What We Do</Link>
+                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Recruitement Procedure</Link>
+                        <Link href="/login"><Button className='rounded-full w-40 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact Us</Button></Link>
                     </div>
                 </div>
                 <div className="py-5 lg:hidden justify-between items-center flex">
@@ -39,25 +42,16 @@ const Navbar = () => {
                         </div>
                     </a>
 
-                    <div className='z-50'><img src={isOpen ? '/xIcon.png' : '/MenuIcon.png'} alt=""
-                                               onClick={toggleMenu}/></div>
-
-
+                    <div className='z-50'><img src={isOpen ? '/xIcon.png' : '/MenuIcon.png'} alt="" onClick={toggleMenu}/></div>
                 </div>
 
-                <div
-                    className='bg-blueDark w-full h-full fixed top-0 left-0 z-40 transform transition-transform duration-300 ease-in-out flex items-center justify-center'
-                    style={{transform: isOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
+                <div className='bg-blueDark w-full h-full fixed top-0 left-0 z-40 transform transition-transform duration-300 ease-in-out flex items-center justify-center' style={{transform: isOpen ? 'translateX(0%)' : 'translateX(100%)'}}>
                     <div className="flex flex-col gap-10 items-center py-10  px-20 text-center">
-                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>Home</Link>
+                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight' >Home</Link>
                         <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>About Us</Link>
-                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>What We
-                            Do</Link>
-                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>Recruitement
-                            Procedure</Link>
-                        <Link href="/login"><Button
-                            className='rounded-full w-11/12 px-12 py-6 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-2xl'>Contact
-                            Us</Button></Link>
+                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>What We Do</Link>
+                        <Link href="/signup" className='text-brandWhite text-2xl hover:text-orangeLight'>Recruitement Procedure</Link>
+                        <Link href="/login"><Button className='rounded-full w-11/12 px-12 py-6 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-2xl'>Contact Us</Button></Link>
                     </div>
                 </div>
             </div>

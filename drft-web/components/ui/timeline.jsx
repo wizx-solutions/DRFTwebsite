@@ -37,7 +37,7 @@ export const Timeline = ({data}) => {
                                 borderRadius: '15px',
                                 borderColor: '#6b4920',
                                 borderStyle: 'solid',
-                                borderWidth: '3px',
+                                borderWidth: '2px',
                                 position: 'relative'
                             }}>
                                 <div

@@ -6,7 +6,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Landing = () => {
 return (
-    <div className="flex items-center justify-center h-screen absolute top-0 z-0">
+    <div className='relative h-[100vh]'>
+      <div className="flex items-center justify-center h-screen absolute top-0 z-0">
         <div className="relative w-screen h-screen">
             <img src="/Hero.webp" alt="" className='absolute lg:top-12 -top-10  left-0 w-full h-full object-cover object-[55%] lg:object-center -z-50 pointer-events-none'/>
             <div className="absolute lg:-top-[200px] -top-[150px] lg:left-60 left-0 w-[1200px] h-[1200px] bg-blueDark rounded-full lg:blur-[1000px] blur-[400px] transform -translate-x-1/2 -translate-y-1/2 -z-10"></div>
@@ -27,6 +28,7 @@ return (
             </div>
             
         </div>
+    </div>
     </div>
 )
 }
