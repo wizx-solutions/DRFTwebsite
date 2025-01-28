@@ -17,9 +17,10 @@ const Navbar = () => {
         });
     }
 
-    const handleScrollAboutUs = (event) => {
+    const handleScrollToSection = (event, id) => {
         event.preventDefault();
-        const target = document.getElementById('aboutus');
+        const target = document.getElementById(id);
+        if (!target) return;
         const offset = 100; // Adjust this value to stop scrolling earlier
         const bodyRect = document.body.getBoundingClientRect().top;
         const elementRect = target.getBoundingClientRect().top;
@@ -30,7 +31,7 @@ const Navbar = () => {
           top: offsetPosition,
           behavior: 'smooth'
         });
-      };
+    };
 
     return (
         <nav className='z-50 fixed top-0 left-0 w-full backdrop-blur-sm'>
@@ -43,9 +44,9 @@ const Navbar = () => {
                     </a>
 
                     <div className="flex gap-10 items-center justify-center">
-                        <a href='#home' className='text-brandWhite text-md hover:text-orangeLight' >Home</a>
-                        <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={handleScrollAboutUs}>About Us</a>
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>What We Do</Link>
+                        <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
+                        <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'aboutus')}>About Us</a>
+                        <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'positions')}>What We Do</a>
                         <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Recruitement Procedure</Link>
                         <Link href="/login"><Button className='rounded-full w-40 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact Us</Button></Link>
                     </div>
