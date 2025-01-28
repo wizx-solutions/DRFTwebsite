@@ -17,10 +17,10 @@ export default function Home() {
 
 
             <div  id="section1"><Vission/></div>
-            <hr className="bg-blueLight border-blueLight" />
+            <hr className="bg-blueLight border-blueLight " />
             <div id="aboutus"><AboutUs/></div>
 
-            <div ><RecruitmentProcess/></div>
+            {/* <div ><RecruitmentProcess/></div> */}
         </div>
     );
 }

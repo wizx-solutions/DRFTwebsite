@@ -17,7 +17,7 @@ const Vission = () => {
             <p className='lg:text-lg text-md'>Our mission is to empower UK businesses by bridging the gap to global talent, providing cost-effective, efficient, and innovative recruitment solutions for the remote-first future</p>
         </div>
       </div>
-        <div className='flex lg:flex-row flex-col w-full lg:px-10 px-4 h-[260px]'>
+        <div className='flex lg:flex-row flex-col w-full lg:px-10 px-4 lg:h-[260px]'>
             <div className="lg:w-1/3 w-full h-full lg:bg-blueLight/20 rounded-xl">
                 <DotLottieReact src="https://lottie.host/4394f5ab-9b46-4606-a534-7cf841b4c3b0/PfS217eI77.lottie" loop autoplay width={70} height={100}/>
             </div>
