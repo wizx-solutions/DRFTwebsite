@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className='lg:w-1/2 justify-center items-center  flex flex-col text-white'>
             <img src="/Icon Light.svg" width={250} alt="" />
             <p className='mt-10 text-justify'>
-            At DRFT Global, we believe that exceptional talent knows no borders. Founded in 2024, our mission is to bridge the gap between global talent and top-tier clients, creating seamless connections that fuel innovation and success.
+            <span className='text-orangeLight'>At DRFT Global</span>, we believe that exceptional talent knows no borders. Founded in 2024, our mission is to bridge the gap between global talent and top-tier clients, creating seamless connections that fuel innovation and success.
             <br /><br />
             In today’s fast-paced world, businesses need access to the best professionals, no matter where they are. We make this possible by matching our clients with highly skilled resources from around the world, ensuring they receive the most suitable talent for their needs. Our commitment is to provide a hassle-free process while delivering significant cost savings, making it possible to hire top-tier talent at a fraction of the usual hiring fees in the UK.
             </p>
