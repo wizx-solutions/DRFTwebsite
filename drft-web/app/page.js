@@ -4,6 +4,7 @@ import Landing from "./sections/Landing";
 import {RecruitmentProcess} from './sections/RecruitmentProcess';
 import Vission from "./sections/Vission";
 import AboutUs from "./sections/AboutUs";
+import Positions from "./sections/Positions";
 
 export default function Home() {
     return (
@@ -19,7 +20,11 @@ export default function Home() {
             <div  id="section1"><Vission/></div>
             <hr className="bg-blueLight border-blueLight " />
             <div id="aboutus"><AboutUs/></div>
-
+            <div className="relative">
+                <div className="absolute left-0 right-0 mx-auto w-[400px] h-[400px] lg:w-[300px] lg:h-[300px] bg-orangeLight rounded-full lg:blur-[250px] blur-[200px] z-10"></div>
+                <div><Positions/></div>
+            </div>
+            <div className="h-96"></div>
             {/* <div ><RecruitmentProcess/></div> */}
         </div>
     );
