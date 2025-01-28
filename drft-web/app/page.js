@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from '../components/ui/Navbar';
 import Landing from "./sections/Landing";
 import {RecruitmentProcess} from './sections/RecruitmentProcess';
+import Vission from "./sections/Vission";
 import AboutUs from "./sections/AboutUs";
 
 export default function Home() {
@@ -15,7 +16,10 @@ export default function Home() {
             </div>
 
 
-            <div  id="section1"><AboutUs/></div>
+            <div  id="section1"><Vission/></div>
+            <hr className="bg-blueLight border-blueLight" />
+            <div id="aboutus"><AboutUs/></div>
+
             <div ><RecruitmentProcess/></div>
         </div>
     );

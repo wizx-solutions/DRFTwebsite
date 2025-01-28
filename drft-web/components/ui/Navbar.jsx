@@ -17,6 +17,21 @@ const Navbar = () => {
         });
     }
 
+    const handleScrollAboutUs = (event) => {
+        event.preventDefault();
+        const target = document.getElementById('aboutus');
+        const offset = 100; // Adjust this value to stop scrolling earlier
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = target.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+    
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      };
+
     return (
         <nav className='z-50 fixed top-0 left-0 w-full backdrop-blur-sm'>
             <div className='max-w-full mx-auto px-6 sm:px-6 lg:px-16 lg:py-1 py-4 z-50'>
@@ -29,7 +44,7 @@ const Navbar = () => {
 
                     <div className="flex gap-10 items-center justify-center">
                         <a href='#home' className='text-brandWhite text-md hover:text-orangeLight' >Home</a>
-                        <a  className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={scrollToAbout}>About Us</a>
+                        <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={handleScrollAboutUs}>About Us</a>
                         <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>What We Do</Link>
                         <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Recruitement Procedure</Link>
                         <Link href="/login"><Button className='rounded-full w-40 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact Us</Button></Link>
