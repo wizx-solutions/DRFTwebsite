@@ -8,11 +8,11 @@ export const Timeline = ({data}) => {
     const [height, setHeight] = useState(0);
 
     useEffect(() => {
-        if (ref.current) {
-            const rect = ref.current.getBoundingClientRect();
+        if (containerRef.current) {
+            const rect = containerRef.current.getBoundingClientRect();
             setHeight(rect.height);
         }
-    }, [ref]);
+    }, [containerRef]);
 
     const {scrollYProgress} = useScroll({
         target: containerRef,
@@ -27,7 +27,7 @@ export const Timeline = ({data}) => {
             <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
                 {data.map((item, index) => (
                     <div key={index}
-                         className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} pt-10 md:pt-40 md:gap-10`}>
+                         className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'} pt-10 md:pt-0 md:gap-10`}>
                         <div
                             className={`relative ${index % 2 === 0 ? 'pr-20' : 'pl-20'} text-justify w-full md:w-1/2`}>
                             <div
@@ -45,7 +45,7 @@ export const Timeline = ({data}) => {
                     </div>
                 ))}
                 <div
-                    className="absolute left-1/2 transform -translate-x-1/2 top-0 overflow-hidden w-[6px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
+                    className="absolute left-1/2 transform -translate-x-1/2 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)]"
                     style={{height: height + "px"}}>
                     <motion.div
                         style={{height: heightTransform, opacity: opacityTransform}}
