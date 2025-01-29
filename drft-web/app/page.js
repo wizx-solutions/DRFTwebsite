@@ -25,7 +25,7 @@ export default function Home() {
                 <div><Positions/></div>
             </div>
             <div className="h-96"></div>
-            {/* <div ><RecruitmentProcess/></div> */}
+             <div ><RecruitmentProcess/></div>
         </div>
     );
 }
