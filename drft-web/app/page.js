@@ -25,7 +25,6 @@ export default function Home() {
                 <div className="absolute left-0 right-0 mx-auto w-[400px] h-[400px] lg:w-[300px] lg:h-[300px] bg-orangeLight rounded-full lg:blur-[250px] blur-[200px] z-10"></div>
                 <div><Positions/></div>
             </div>
-            <div className="h-0.5"></div>
              <div ><RecruitmentProcess/></div>
             <div><PageEnd/></div>
         </div>
