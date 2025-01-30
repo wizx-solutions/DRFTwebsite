@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d8ecef0-632f-43f9-b998-03a9d33da487" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/sections/RecruitmentProcess.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/timeline.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sections/RecruitmentProcess.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/sections/RecruitmentProcess.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ui/timeline.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/timeline.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +38,9 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;timeline&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DRFT/DRFTwebsite/drft-web/app/sections&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,6 +50,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DRFT\DRFTwebsite\drft-web\app\sections" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -78,6 +76,9 @@
       <workItem from="1737843238781" duration="6000" />
       <workItem from="1737843457793" duration="20000" />
       <workItem from="1737843539928" duration="62000" />
+      <workItem from="1738119609609" duration="193000" />
+      <workItem from="1738120140360" duration="9310000" />
+      <workItem from="1738135192268" duration="5859000" />
     </task>
     <servers />
   </component>
