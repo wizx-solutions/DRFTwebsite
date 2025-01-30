@@ -47,7 +47,7 @@ const Navbar = () => {
                         <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
                         <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'aboutus')}>About Us</a>
                         <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'positions')}>What We Do</a>
-                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight'>Recruitement Procedure</Link>
+                        <Link href="/signup" className='text-brandWhite text-md hover:text-orangeLight' onClick={(event)=> handleScrollToSection(event, 'recruitment')}>Recruitement Procedure</Link>
                         <Link href="/login"><Button className='rounded-full w-40 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact Us</Button></Link>
                     </div>
                 </div>
