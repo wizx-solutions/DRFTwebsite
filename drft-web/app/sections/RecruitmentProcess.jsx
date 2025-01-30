@@ -60,9 +60,9 @@ export function RecruitmentProcess() {
     ];
 
     return (
-        <div className="w-full pl-6 pr-14 md:px-40">
-            <div className="text-4xl text-customBlue font-bold text-center mb-28">
-                Bridging Recruitment Process<br/> Borders, Breaking Barriers
+        <div className="w-full px-8 md:px-40">
+            <div className="text-4xl text-customBlue font-bold text-center lg:mb-28 mb-16 lg:px-40">
+                Bridging Recruitment Process Borders, Breaking Barriers
             </div>
             <Timeline data={data}/>
         </div>
