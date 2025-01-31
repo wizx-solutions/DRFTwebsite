@@ -14,7 +14,7 @@ const PageEnd = () => (
             </div>
             <Link href="/login">
                 <Button
-                    className="md:w-2/5 rounded-full bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-xl md:text-2xl p-4 md:p-8 mt-5 md:mt-12">
+                    className="md:w-2/5 w-3/5 rounded-full bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-xl md:text-2xl p-4 md:p-8 mt-5 md:mt-12">
                     Contact Us
                 </Button>
             </Link>
@@ -25,7 +25,7 @@ const PageEnd = () => (
                     careers@drftglobal.com
                 </Link>
                 <span className="flex gap-1.5">
-                    <a href="tel:+94888718712" className='flex items-center justify-center gap-1.5 hover:text-orangeLight'> <FaPhone size={20}/>  (+94) 88 871 8712</a>
+                    <a href="tel:+94768071425" className='flex items-center justify-center gap-1.5 hover:text-orangeLight'> <FaPhone size={20}/>  (+94) 76 807 1425</a>
                 </span>
                 <span className="flex gap-6">
                     <Link href="https://www.instagram.com/" className="flex gap-1.5 hover:text-orangeLight">
