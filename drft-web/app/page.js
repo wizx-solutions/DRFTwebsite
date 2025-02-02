@@ -7,6 +7,7 @@ import Positions from "./sections/Positions";
 import PageEnd from "@/app/sections/PageEnd";
 
 
+
 export default function Home() {
     return (
         <div className='w-lvw overflow-x-hidden'>
@@ -27,6 +28,7 @@ export default function Home() {
             </div>
              <div id='recruitment'><RecruitmentProcess/></div>
             <div><PageEnd/></div>
+
         </div>
     );
 }
