@@ -11,6 +11,8 @@ import {
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog"
+  import { FaLinkedin, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa6";
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -58,7 +60,7 @@ const Navbar = () => {
                             <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
                             <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'aboutus')}>About Us</a>
                             <a className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'positions')}>What We Do</a>
-                            <a  className='text-brandWhite text-md hover:text-orangeLight' onClick={(event)=> handleScrollToSection(event, 'recruitment')}>Recruitement Procedure</a>
+                            <a  className='text-brandWhite text-md hover:text-orangeLight cursor-pointer' onClick={(event)=> handleScrollToSection(event, 'recruitment')}>Recruitement Procedure</a>
                            <DialogTrigger className='rounded-full w-40 bg-orangeLight font-semibold py-2 text-white hover:bg-brandWhite hover:text-orangeDark text-md'>Contact us</DialogTrigger>
                         </div>
                     </div>
@@ -76,22 +78,23 @@ const Navbar = () => {
                             <a  className='text-brandWhite text-2xl hover:text-orangeLight' onClick={(event)=> handleScrollToSection(event, 'aboutus')}>About Us</a>
                             <a  className='text-brandWhite text-2xl hover:text-orangeLight' onClick={(event)=> handleScrollToSection(event, 'positions')}>What We Do</a>
                             <a  className='text-brandWhite text-2xl hover:text-orangeLight' onClick={(event)=> handleScrollToSection(event, 'recruitment')}>Recruitement Procedure</a>
-                            <Button className='rounded-full w-11/12 px-12 py-6 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-2xl'>Contact Us</Button>
+                            <DialogTrigger className='rounded-full w-11/12 px-12 py-6 bg-orangeLight font-semibold text-white hover:bg-brandWhite hover:text-orangeDark text-2xl'>Contact Us</DialogTrigger>
                         </div>
                     </div>
                 </div>
             </nav>
 
-            <DialogContent className='bg-white'>
-                <DialogHeader>
-                <DialogTitle>Are you absolutely sure?</DialogTitle>
-                <DialogDescription>
-                    This action cannot be undone. This will permanently delete your account
-                    and remove your data from our servers.
-                </DialogDescription>
-                </DialogHeader>
-            </DialogContent>
-            </Dialog>
+                          <DialogContent className='bg-white/90 w-5/6 lg:w-full'>
+                              <DialogHeader>
+                              <DialogTitle className="tracking-widest">CONTACT US</DialogTitle>
+                                  <div className="w-full flex flex-col gap-3 items-center justify-center py-5">
+                                      <Button className="bg-blueDark text-white text-lg rounded-lg w-full py-8 px-3 hover:bg-blueLight" onClick={() => window.location.href="mailto:careers@drftglobal.com"}><a href="tel:+94768071425" className='flex items-center justify-center gap-1.5 '> <FaEnvelope size={25}/>
+                                                          careers@drftglobal.com</a></Button>
+                                      <Button className="bg-orangeDark text-white text-lg rounded-lg w-full py-8 hover:bg-orangeLight" onClick={() => window.location.href="tel:+94768071425"}><a className='flex items-center justify-center gap-1.5'> <FaPhone size={20}/>  (+94) 76 807 1425</a></Button>
+                                  </div>
+                              </DialogHeader>
+                          </DialogContent>
+                          </Dialog>
         </div>
     )
 }
