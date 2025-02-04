@@ -37,9 +37,9 @@ const PageEnd = () => (
                         <a href="tel:+94768071425" className='flex items-center justify-center gap-1.5 hover:text-orangeLight'> <FaPhone size={20}/>  (+94) 76 807 1425</a>
                     </span>
                     <span className="flex gap-6">
-                        <Link href="https://www.instagram.com/" className="flex gap-1.5 hover:text-orangeLight">
+                        {/* <Link href="https://www.instagram.com/" className="flex gap-1.5 hover:text-orangeLight">
                             <FaInstagram size={25}/>
-                        </Link>
+                        </Link> */}
                         <Link href="https://www.linkedin.com/company/drft-global/" className="flex gap-1.5 hover:text-orangeLight">
                             <FaLinkedin size={25}/>
                         </Link>
