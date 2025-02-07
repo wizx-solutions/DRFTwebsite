@@ -51,7 +51,7 @@ const PageEnd = () => (
                     © 2025 DRFT Global. All rights reserved.
                 </p>
                 <p className="text-xs md:text-sm">
-                    Designed & Developed by <span className='moving-gradient font-bold'>WizX Solutions</span>
+                    Designed & Developed by <span className='moving-gradient font-bold'><a href="https://www.linkedin.com/company/wizx-solutions/posts/?feedView=all">WizX Solutions</a></span>
                 </p>
             </div>
             <style jsx>{`
